@@ -45,8 +45,7 @@ body::after {
     padding: 0 2rem;
 }
 
-/* TIPOGRAFIA */
-h1, h2, h3, h4, .btn-primary, .btn-outline, .filter-btn {
+h1, h2, h3, h4, .logo, .btn-primary, .btn-outline, .filter-btn {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -71,7 +70,6 @@ p, .service-claim, .team-role, .card-info p {
     color: #B0B0B0;
 }
 
-/* HEADER STICKY */
 .site-header {
     position: sticky;
     top: 0;
@@ -87,15 +85,12 @@ p, .service-claim, .team-role, .card-info p {
     align-items: center;
 }
 
-/* LOGO ANNI '90 - VERSIONE ROBUSTA */
+/* LOGO DEFINITIVO */
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
-    font-weight: 900;
-    letter-spacing: -0.5px;
 }
 .logo-7 {
     font-size: 2.8rem;
@@ -121,19 +116,12 @@ p, .service-claim, .team-role, .card-info p {
     font-size: 0.9rem;
     letter-spacing: 3px;
 }
-.logo-footer {
-    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #C3A06D;
-    letter-spacing: 2px;
-}
 .logo:hover .logo-7 {
     animation: glitch 0.3s infinite;
 }
 @keyframes glitch {
-    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; opacity: 1; }
-    20% { transform: translate(-1px, 1px); text-shadow: 1px -1px cyan, -1px 1px magenta; }
+    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; }
+    20% { transform: translate(-1px, 1px); }
     40% { transform: translate(1px, -1px); }
     60% { transform: translate(-1px, 0); }
     80% { transform: translate(1px, 1px); }
@@ -164,7 +152,6 @@ p, .service-claim, .team-role, .card-info p {
     cursor: pointer;
 }
 
-/* HERO */
 .hero {
     position: relative;
     height: 90vh;
@@ -209,7 +196,6 @@ p, .service-claim, .team-role, .card-info p {
     margin-bottom: 2rem;
 }
 
-/* BOTTONI */
 .btn-primary, .btn-outline {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -236,7 +222,6 @@ p, .service-claim, .team-role, .card-info p {
     color: #0A0A0A;
 }
 
-/* PORTFOLIO GRID */
 .highlights-grid, .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -298,7 +283,6 @@ p, .service-claim, .team-role, .card-info p {
     font-size: 0.9rem;
 }
 
-/* FILTER BUTTONS */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -320,7 +304,6 @@ p, .service-claim, .team-role, .card-info p {
     border-bottom: 2px solid #C3A06D;
 }
 
-/* SERVIZI E TEAM */
 .service-block {
     padding: 5rem 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -353,7 +336,6 @@ p, .service-claim, .team-role, .card-info p {
     margin: 0.5rem 0;
 }
 
-/* CONTATTI */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,7 +359,6 @@ p, .service-claim, .team-role, .card-info p {
     text-decoration: none;
 }
 
-/* MODALE */
 .modal {
     display: none;
     position: fixed;
@@ -445,7 +426,6 @@ p, .service-claim, .team-role, .card-info p {
     }
 }
 
-/* FOOTER */
 .site-footer {
     background: #1A1A1A;
     padding: 3rem 0 1rem;
@@ -470,7 +450,6 @@ p, .service-claim, .team-role, .card-info p {
     font-size: 0.8rem;
 }
 
-/* CURSOR PERSONALIZZATO */
 @media (min-width: 1024px) {
     .cursor-dot, .cursor-outline {
         pointer-events: none;

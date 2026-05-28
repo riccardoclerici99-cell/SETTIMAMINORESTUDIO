@@ -1,4 +1,3 @@
-// Dati di esempio per il portfolio
 const portfolioData = [
     { id: 1, title: "Echi dal profondo", client: "Film: Nessuna Luce", category: "cinema", image: "assets/images/project1.jpg", description: "Sound design atmosferico per un thriller psicologico.", credits: "Musica: Riccardo Clerici", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
     { id: 2, title: "Velocità", client: "Nike Commercial", category: "commercial", image: "assets/images/project2.jpg", description: "Brand identity sonora ad alto impatto.", credits: "Mix & Master: Simone Mangialenti", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
@@ -6,7 +5,6 @@ const portfolioData = [
     { id: 4, title: "Sospeso", client: "Cortometraggio", category: "cinema", image: "assets/images/project4.jpg", description: "Colonna sonora minimalista.", credits: "Composizione: Riccardo Clerici", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" }
 ];
 
-// Render portfolio
 function renderPortfolio(filter = "all") {
     const grid = document.getElementById('portfolio-grid');
     if (!grid) return;
@@ -31,7 +29,6 @@ function renderPortfolio(filter = "all") {
 function attachCardEvents() {
     const cards = document.querySelectorAll('.portfolio-card');
     cards.forEach(card => {
-        // Hover preview audio (breve)
         let hoverTimeout;
         let audioPreview = null;
         card.addEventListener('mouseenter', () => {
@@ -51,7 +48,6 @@ function attachCardEvents() {
                 audioPreview = null;
             }
         });
-        // Click per modal dettaglio
         card.addEventListener('click', () => {
             const id = parseInt(card.dataset.id);
             const project = portfolioData.find(p => p.id === id);
@@ -60,7 +56,6 @@ function attachCardEvents() {
     });
 }
 
-// MODALE
 const modal = document.getElementById('projectModal');
 function openModal(project) {
     if (!modal) return;
@@ -86,7 +81,6 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) modal.style.display = 'none';
 });
 
-// FILTRI
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -96,7 +90,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
 });
 
-// Inizializza
 if (document.getElementById('portfolio-grid')) {
     renderPortfolio('all');
 }

@@ -89,7 +89,7 @@ p, .service-claim, .team-role, .card-info p {
     align-items: center;
 }
 
-/* LOGO ANNI '90 - versione verde */
+/* LOGO ANNI '90 */
 .logo {
     display: flex;
     align-items: center;
@@ -205,7 +205,7 @@ p, .service-claim, .team-role, .card-info p {
     margin-bottom: 2rem;
 }
 
-/* BOTTONI - versione verde con spaziatura aumentata */
+/* BOTTONI - spaziatura sopra e sotto aumentata */
 .btn-primary, .btn-outline, .btn-small {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -218,6 +218,8 @@ p, .service-claim, .team-role, .card-info p {
 .btn-primary {
     background-color: #1DB954;
     color: #0A0A0A;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .btn-primary:hover {
     background-color: #0e8e3e;
@@ -227,22 +229,30 @@ p, .service-claim, .team-role, .card-info p {
     border-color: #1DB954;
     color: #1DB954;
     background: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .btn-outline:hover {
     background: #1DB954;
     color: #0A0A0A;
 }
 .btn-small {
-    padding: 0.5rem 1.3rem;
+    padding: 0.6rem 1.5rem;
     font-size: 0.85rem;
     border-color: #1DB954;
     color: #1DB954;
     background: transparent;
-    margin-top: 1.5rem;   /* DISTANZA AUMENTATA dal testo */
+    margin-top: 2rem;       /* spazio sopra dal testo */
+    margin-bottom: 1.5rem;  /* spazio sotto */
 }
 .btn-small:hover {
     background: #1DB954;
     color: #0A0A0A;
+}
+
+/* Card e sezioni - più respiro */
+.snapshot-card, .service-block, .team-card {
+    padding-bottom: 1rem;
 }
 
 /* PORTFOLIO GRID */
@@ -380,7 +390,6 @@ p, .service-claim, .team-role, .card-info p {
 }
 .contact-form button {
     width: 100%;
-    margin-top: 0.5rem;
 }
 .contact-info a {
     color: #1DB954;

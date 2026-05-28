@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Custom cursor solo se esiste (rimossa la parte che causava errore)
+    // Custom cursor (solo se esiste)
     const dot = document.querySelector('.cursor-dot');
     const outline = document.querySelector('.cursor-outline');
     if (dot && outline) {
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dot.style.opacity = '1';
             outline.style.opacity = '1';
         });
-        // rimossa la parte incriminata che causava errore
     }
 
     const contactForm = document.getElementById('contactForm');

@@ -14,6 +14,7 @@ body {
     scroll-behavior: smooth;
     position: relative;
 }
+/* Effetto "rumore" VHS anni 90 */
 body::before {
     content: "";
     position: fixed;
@@ -25,6 +26,7 @@ body::before {
     pointer-events: none;
     z-index: 9998;
 }
+/* Effetto scanline */
 body::after {
     content: "";
     position: fixed;
@@ -45,7 +47,8 @@ body::after {
     padding: 0 2rem;
 }
 
-h1, h2, h3, h4, .logo, .btn-primary, .btn-outline, .filter-btn {
+/* TIPOGRAFIA */
+h1, h2, h3, h4, .logo, .btn-primary, .btn-outline, .filter-btn, .btn-small {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -70,6 +73,7 @@ p, .service-claim, .team-role, .card-info p {
     color: #B0B0B0;
 }
 
+/* HEADER STICKY */
 .site-header {
     position: sticky;
     top: 0;
@@ -85,15 +89,19 @@ p, .service-claim, .team-role, .card-info p {
     align-items: center;
 }
 
-/* LOGO DEFINITIVO */
+/* LOGO ANNI '90 - versione robusta */
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
+    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
 }
 .logo-7 {
     font-size: 2.8rem;
+    background: #C3A06D;
     background: linear-gradient(145deg, #E6C28F, #A88650);
     -webkit-background-clip: text;
     background-clip: text;
@@ -120,8 +128,8 @@ p, .service-claim, .team-role, .card-info p {
     animation: glitch 0.3s infinite;
 }
 @keyframes glitch {
-    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; }
-    20% { transform: translate(-1px, 1px); }
+    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; opacity: 1; }
+    20% { transform: translate(-1px, 1px); text-shadow: 1px -1px cyan, -1px 1px magenta; }
     40% { transform: translate(1px, -1px); }
     60% { transform: translate(-1px, 0); }
     80% { transform: translate(1px, 1px); }
@@ -152,6 +160,7 @@ p, .service-claim, .team-role, .card-info p {
     cursor: pointer;
 }
 
+/* HERO */
 .hero {
     position: relative;
     height: 90vh;
@@ -196,7 +205,8 @@ p, .service-claim, .team-role, .card-info p {
     margin-bottom: 2rem;
 }
 
-.btn-primary, .btn-outline {
+/* BOTTONI */
+.btn-primary, .btn-outline, .btn-small {
     display: inline-block;
     padding: 0.8rem 2rem;
     text-decoration: none;
@@ -221,7 +231,20 @@ p, .service-claim, .team-role, .card-info p {
     background: #C3A06D;
     color: #0A0A0A;
 }
+.btn-small {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+    border-color: #C3A06D;
+    color: #C3A06D;
+    background: transparent;
+    margin-top: 1rem;
+}
+.btn-small:hover {
+    background: #C3A06D;
+    color: #0A0A0A;
+}
 
+/* PORTFOLIO GRID */
 .highlights-grid, .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -283,6 +306,7 @@ p, .service-claim, .team-role, .card-info p {
     font-size: 0.9rem;
 }
 
+/* FILTER BUTTONS */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -304,6 +328,7 @@ p, .service-claim, .team-role, .card-info p {
     border-bottom: 2px solid #C3A06D;
 }
 
+/* SERVIZI E TEAM */
 .service-block {
     padding: 5rem 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -336,6 +361,7 @@ p, .service-claim, .team-role, .card-info p {
     margin: 0.5rem 0;
 }
 
+/* CONTATTI */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -359,6 +385,7 @@ p, .service-claim, .team-role, .card-info p {
     text-decoration: none;
 }
 
+/* MODALE */
 .modal {
     display: none;
     position: fixed;
@@ -426,6 +453,7 @@ p, .service-claim, .team-role, .card-info p {
     }
 }
 
+/* FOOTER */
 .site-footer {
     background: #1A1A1A;
     padding: 3rem 0 1rem;
@@ -449,7 +477,16 @@ p, .service-claim, .team-role, .card-info p {
     border-top: 1px solid #333;
     font-size: 0.8rem;
 }
+.logo-footer {
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.logo-accent {
+    color: #C3A06D;
+}
 
+/* CURSOR PERSONALIZZATO */
 @media (min-width: 1024px) {
     .cursor-dot, .cursor-outline {
         pointer-events: none;

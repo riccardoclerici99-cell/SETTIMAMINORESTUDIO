@@ -1,3 +1,4 @@
+// Menu mobile toggle
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Cursore personalizzato (solo desktop)
     const dot = document.querySelector('.cursor-dot');
     const outline = document.querySelector('.cursor-outline');
     if (dot && outline) {
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Form contatti
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {

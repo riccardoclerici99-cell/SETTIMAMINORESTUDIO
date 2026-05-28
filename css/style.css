@@ -64,7 +64,7 @@ h2 {
 .section-title {
     font-size: 2rem;
     margin-bottom: 2rem;
-    border-left: 4px solid #C3A06D;
+    border-left: 4px solid #1DB954;
     padding-left: 1rem;
 }
 p, .service-claim, .team-role, .card-info p {
@@ -89,7 +89,7 @@ p, .service-claim, .team-role, .card-info p {
     align-items: center;
 }
 
-/* LOGO ANNI '90 - versione robusta */
+/* LOGO ANNI '90 - versione verde */
 .logo {
     display: flex;
     align-items: center;
@@ -101,8 +101,8 @@ p, .service-claim, .team-role, .card-info p {
 }
 .logo-7 {
     font-size: 2.8rem;
-    background: #C3A06D;
-    background: linear-gradient(145deg, #E6C28F, #A88650);
+    background: #1DB954;
+    background: linear-gradient(145deg, #1DB954, #0e8e3e);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -120,7 +120,7 @@ p, .service-claim, .team-role, .card-info p {
     color: white;
 }
 .logo-minore {
-    color: #C3A06D;
+    color: #1DB954;
     font-size: 0.9rem;
     letter-spacing: 3px;
 }
@@ -149,7 +149,7 @@ p, .service-claim, .team-role, .card-info p {
     transition: color 0.2s;
 }
 .main-nav a:hover, .main-nav a.active {
-    color: #C3A06D;
+    color: #1DB954;
 }
 .menu-toggle {
     display: none;
@@ -205,7 +205,7 @@ p, .service-claim, .team-role, .card-info p {
     margin-bottom: 2rem;
 }
 
-/* BOTTONI */
+/* BOTTONI - versione verde */
 .btn-primary, .btn-outline, .btn-small {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -213,34 +213,35 @@ p, .service-claim, .team-role, .card-info p {
     font-weight: 600;
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .btn-primary {
-    background-color: #C3A06D;
+    background-color: #1DB954;
     color: #0A0A0A;
 }
 .btn-primary:hover {
-    background-color: #a88650;
+    background-color: #0e8e3e;
     transform: scale(1.02);
 }
 .btn-outline {
-    border-color: #C3A06D;
-    color: #C3A06D;
+    border-color: #1DB954;
+    color: #1DB954;
     background: transparent;
 }
 .btn-outline:hover {
-    background: #C3A06D;
+    background: #1DB954;
     color: #0A0A0A;
 }
 .btn-small {
     padding: 0.4rem 1.2rem;
     font-size: 0.8rem;
-    border-color: #C3A06D;
-    color: #C3A06D;
+    border-color: #1DB954;
+    color: #1DB954;
     background: transparent;
     margin-top: 1rem;
 }
 .btn-small:hover {
-    background: #C3A06D;
+    background: #1DB954;
     color: #0A0A0A;
 }
 
@@ -278,7 +279,7 @@ p, .service-claim, .team-role, .card-info p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(195, 160, 109, 0.1);
+    background: rgba(29, 185, 84, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,7 +294,7 @@ p, .service-claim, .team-role, .card-info p {
     padding: 0.5rem 1rem;
     border-radius: 30px;
     font-size: 0.8rem;
-    color: #C3A06D;
+    color: #1DB954;
     font-family: monospace;
 }
 .card-info {
@@ -324,8 +325,8 @@ p, .service-claim, .team-role, .card-info p {
     transition: 0.2s;
 }
 .filter-btn.active, .filter-btn:hover {
-    color: #C3A06D;
-    border-bottom: 2px solid #C3A06D;
+    color: #1DB954;
+    border-bottom: 2px solid #1DB954;
 }
 
 /* SERVIZI E TEAM */
@@ -381,7 +382,7 @@ p, .service-claim, .team-role, .card-info p {
     width: 100%;
 }
 .contact-info a {
-    color: #C3A06D;
+    color: #1DB954;
     text-decoration: none;
 }
 
@@ -483,7 +484,7 @@ p, .service-claim, .team-role, .card-info p {
     font-size: 1.2rem;
 }
 .logo-accent {
-    color: #C3A06D;
+    color: #1DB954;
 }
 
 /* CURSOR PERSONALIZZATO */
@@ -501,12 +502,12 @@ p, .service-claim, .team-role, .card-info p {
     .cursor-dot {
         width: 6px;
         height: 6px;
-        background: #C3A06D;
+        background: #1DB954;
     }
     .cursor-outline {
         width: 30px;
         height: 30px;
-        border: 1px solid rgba(195,160,109,0.5);
+        border: 1px solid rgba(29,185,84,0.5);
         transition: transform 0.1s, width 0.2s, height 0.2s;
     }
     body:hover .cursor-dot, body:hover .cursor-outline {

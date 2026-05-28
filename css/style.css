@@ -14,7 +14,6 @@ body {
     scroll-behavior: smooth;
     position: relative;
 }
-/* Effetto "rumore" VHS anni 90 */
 body::before {
     content: "";
     position: fixed;
@@ -26,7 +25,6 @@ body::before {
     pointer-events: none;
     z-index: 9998;
 }
-/* Effetto scanline */
 body::after {
     content: "";
     position: fixed;
@@ -48,7 +46,7 @@ body::after {
 }
 
 /* TIPOGRAFIA */
-h1, h2, h3, h4, .logo, .btn-primary, .btn-outline, .filter-btn {
+h1, h2, h3, h4, .btn-primary, .btn-outline, .filter-btn {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -89,45 +87,53 @@ p, .service-claim, .team-role, .card-info p {
     align-items: center;
 }
 
-/* LOGO ANNI '90 */
+/* LOGO ANNI '90 - VERSIONE ROBUSTA */
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
 }
 .logo-7 {
-    font-size: 2.5rem;
-    background: linear-gradient(135deg, #C3A06D 0%, #E6C28F 100%);
+    font-size: 2.8rem;
+    background: linear-gradient(145deg, #E6C28F, #A88650);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 8px rgba(195, 160, 109, 0.5);
-    font-family: monospace;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    font-family: 'Courier New', 'Courier', monospace;
+    font-weight: bold;
+    line-height: 1;
 }
 .logo-text {
+    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
+    font-size: 1rem;
     line-height: 1.2;
-}
-.logo-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
     text-transform: uppercase;
+    font-weight: 900;
+    color: white;
 }
 .logo-minore {
     color: #C3A06D;
-    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+.logo-footer {
+    font-family: 'Arial Black', 'Impact', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #C3A06D;
     letter-spacing: 2px;
 }
 .logo:hover .logo-7 {
     animation: glitch 0.3s infinite;
 }
 @keyframes glitch {
-    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; }
-    20% { transform: translate(-1px, 1px); }
+    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; opacity: 1; }
+    20% { transform: translate(-1px, 1px); text-shadow: 1px -1px cyan, -1px 1px magenta; }
     40% { transform: translate(1px, -1px); }
     60% { transform: translate(-1px, 0); }
     80% { transform: translate(1px, 1px); }

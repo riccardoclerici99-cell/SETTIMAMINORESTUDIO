@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio · Studio Audio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23C3A06D'/%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">STUDIO<span class="logo-accent">AUDIO</span></a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                    <li><a href="servizi.html">SERVIZI</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="contatti.html">CONTATTI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Reference.</h1>
+                <p>Una selezione di progetti dove la musica ha trovato la sua forma definitiva.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tutti</button>
+                    <button class="filter-btn" data-filter="cinema">Cinema</button>
+                    <button class="filter-btn" data-filter="pop">Pop</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODALE PER ASCOLTO/DETTAGLI -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <div id="modal-player-container"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <p id="modal-credits"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <span class="logo">STUDIO<span class="logo-accent">AUDIO</span></span>
+                <p>Precisione da laboratorio, anima da storyteller.</p>
+            </div>
+            <div class="footer-links">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="team.html">Team</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">IG</a> <a href="#">SP</a> <a href="#">IN</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 Studio Audio — Tutti i diritti riservati</p>
+            <p><a href="mailto:info@studioaudio.com">info@studioaudio.com</a> | +39 02 1234567</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

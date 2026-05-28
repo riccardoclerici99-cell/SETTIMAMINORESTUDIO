@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti · Studio Audio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;600;700&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23C3A06D'/%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">STUDIO<span class="logo-accent">AUDIO</span></a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="servizi.html">SERVIZI</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="contatti.html" class="active">CONTATTI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Parlateci del vostro progetto.</h1>
+                <p>Raccontateci la vostra idea, vi risponderemo in meno di 24 ore.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Nome e cognome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <select name="projectType">
+                        <option value="">Tipo di progetto</option>
+                        <option value="pop">Produzione Pop</option>
+                        <option value="cinema">Produzione Cinema</option>
+                        <option value="mix">Mix & Master</option>
+                        <option value="samples">Sample pack</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                    <input type="text" name="budget" placeholder="Budget indicativo (opzionale)">
+                    <textarea rows="5" placeholder="Descrivici la tua idea..." required></textarea>
+                    <button type="submit" class="btn-primary">Invia richiesta →</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Info e social</h3>
+                    <p><a href="mailto:info@studioaudio.com">info@studioaudio.com</a></p>
+                    <p>+39 02 1234567</p>
+                    <p>Via del Suono 12, Milano</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a> | <a href="#">Spotify</a> | <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <span class="logo">STUDIO<span class="logo-accent">AUDIO</span></span>
+                <p>Precisione da laboratorio, anima da storyteller.</p>
+            </div>
+            <div class="footer-links">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="team.html">Team</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">IG</a> <a href="#">SP</a> <a href="#">IN</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 Studio Audio — Tutti i diritti riservati</p>
+            <p><a href="mailto:info@studioaudio.com">info@studioaudio.com</a> | +39 02 1234567</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

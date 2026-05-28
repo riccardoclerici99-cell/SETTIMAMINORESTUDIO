@@ -14,7 +14,7 @@ body {
     scroll-behavior: smooth;
     position: relative;
 }
-/* Effetto "rumore" VHS anni 90 */
+/* Effetto "rumore" VHS */
 body::before {
     content: "";
     position: fixed;
@@ -101,7 +101,6 @@ p, .service-claim, .team-role, .card-info p {
 }
 .logo-7 {
     font-size: 2.8rem;
-    background: #1DB954;
     background: linear-gradient(145deg, #1DB954, #0e8e3e);
     -webkit-background-clip: text;
     background-clip: text;
@@ -160,7 +159,7 @@ p, .service-claim, .team-role, .card-info p {
     cursor: pointer;
 }
 
-/* HERO */
+/* HERO CON VIDEO */
 .hero {
     position: relative;
     height: 90vh;
@@ -205,7 +204,7 @@ p, .service-claim, .team-role, .card-info p {
     margin-bottom: 2rem;
 }
 
-/* BOTTONI - versione verde */
+/* BOTTONI */
 .btn-primary, .btn-outline, .btn-small {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -487,7 +486,7 @@ p, .service-claim, .team-role, .card-info p {
     color: #1DB954;
 }
 
-/* CURSOR PERSONALIZZATO */
+/* CURSOR */
 @media (min-width: 1024px) {
     .cursor-dot, .cursor-outline {
         pointer-events: none;
